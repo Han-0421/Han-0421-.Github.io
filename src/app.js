@@ -193,44 +193,44 @@ export default {
 
     setMainProperty(imageurl){
       const root = document.documentElement;
-      let leleodata = this.getCookie("leleodata");
-      if(leleodata){
-        root.style.setProperty('--leleo-welcomtitle-color', `${leleodata.color.welcometitlecolor}`);
-        root.style.setProperty('--leleo-vcard-color', `${leleodata.color.themecolor}`);
-        root.style.setProperty('--leleo-brightness', `${leleodata.brightness}%`);
-        root.style.setProperty('--leleo-blur', `${leleodata.blur}px`); 
+      let hjxdata = this.getCookie("hjxdata");
+      if(hjxdata){
+        root.style.setProperty('--hjx-welcomtitle-color', `${hjxdata.color.welcometitlecolor}`);
+        root.style.setProperty('--hjx-vcard-color', `${hjxdata.color.themecolor}`);
+        root.style.setProperty('--hjx-brightness', `${hjxdata.brightness}%`);
+        root.style.setProperty('--hjx-blur', `${hjxdata.blur}px`); 
       }else{
-        root.style.setProperty('--leleo-welcomtitle-color', `${this.configdata.color.welcometitlecolor}`);
-        root.style.setProperty('--leleo-vcard-color', `${this.configdata.color.themecolor}`);  
-        root.style.setProperty('--leleo-brightness', `${this.configdata.brightness}%`);  
-        root.style.setProperty('--leleo-blur', `${this.configdata.blur}px`);
+        root.style.setProperty('--hjx-welcomtitle-color', `${this.configdata.color.welcometitlecolor}`);
+        root.style.setProperty('--hjx-vcard-color', `${this.configdata.color.themecolor}`);  
+        root.style.setProperty('--hjx-brightness', `${this.configdata.brightness}%`);  
+        root.style.setProperty('--hjx-blur', `${this.configdata.blur}px`);
       }
   
-      let leleodatabackground = this.getCookie("leleodatabackground");
+      let hjxdatabackground = this.getCookie("hjxdatabackground");
       const { xs } = useDisplay();
-      if(leleodatabackground){
+      if(hjxdatabackground){
         if(xs.value){
-          if(leleodatabackground.mobile.type == "pic"){
-            root.style.setProperty('--leleo-background-image-url', `url('${leleodatabackground.mobile.datainfo.url}')`);
-            imageurl = leleodatabackground.mobile.datainfo.url;
+          if(hjxdatabackground.mobile.type == "pic"){
+            root.style.setProperty('--hjx-background-image-url', `url('${hjxdatabackground.mobile.datainfo.url}')`);
+            imageurl = hjxdatabackground.mobile.datainfo.url;
             return imageurl;
           }else{
-            this.videosrc = leleodatabackground.mobile.datainfo.url;
+            this.videosrc = hjxdatabackground.mobile.datainfo.url;
           }
         }else{
-          if(leleodatabackground.pc.type == "pic"){
-            root.style.setProperty('--leleo-background-image-url', `url('${leleodatabackground.pc.datainfo.url}')`);
-            imageurl = leleodatabackground.pc.datainfo.url;
+          if(hjxdatabackground.pc.type == "pic"){
+            root.style.setProperty('--hjx-background-image-url', `url('${hjxdatabackground.pc.datainfo.url}')`);
+            imageurl = hjxdatabackground.pc.datainfo.url;
             return imageurl;
           }else{
-            this.videosrc = leleodatabackground.pc.datainfo.url;
+            this.videosrc = hjxdatabackground.pc.datainfo.url;
           }
         }
           
       }else{
         if(xs.value){
           if(this.configdata.background.mobile.type == "pic"){
-            root.style.setProperty('--leleo-background-image-url', `url('${this.configdata.background.mobile.datainfo.url}')`);
+            root.style.setProperty('--hjx-background-image-url', `url('${this.configdata.background.mobile.datainfo.url}')`);
             imageurl = this.configdata.background.mobile.datainfo.url;
             return imageurl;
           }else{
@@ -238,7 +238,7 @@ export default {
           }
         }else{
           if(this.configdata.background.pc.type == "pic"){
-            root.style.setProperty('--leleo-background-image-url', `url('${this.configdata.background.pc.datainfo.url}')`);
+            root.style.setProperty('--hjx-background-image-url', `url('${this.configdata.background.pc.datainfo.url}')`);
             imageurl = this.configdata.background.pc.datainfo.url;
             return imageurl;
           }else{

@@ -1,7 +1,7 @@
 <template>
       <div>
         <div>
-          <div :style="xs||sm?{'display':'none'}:{'font-size':'4rem'}" class="leleo-left-welcome">{{ configdata.welcometitle }}</div>
+          <div :style="xs||sm?{'display':'none'}:{'font-size':'4rem'}" class="hjx-left-welcome">{{ configdata.welcometitle }}</div>
         </div>
         <div>
           <v-row align="center">
@@ -12,7 +12,7 @@
               <v-card class="ma-3" hover
                 >
                   <template v-slot:title >
-                    <span class="leleo-card-title clock-font">{{formattedTime}}</span>
+                    <span class="hjx-card-title clock-font">{{formattedTime}}</span>
                   </template>
                   <template v-slot:subtitle>
                     <span style="font-weight: bold;">{{formattedDate}}</span>
@@ -22,7 +22,7 @@
             </v-col>
           </v-row>
           
-          <v-chip class="mt-3 ml-3" prepend-icon="mdi-webhook"  size="large" style="color: var(--leleo-vcard-color);">
+          <v-chip class="mt-3 ml-3" prepend-icon="mdi-webhook"  size="large" style="color: var(--hjx-vcard-color);">
             部署项目
           </v-chip>
           <v-container>

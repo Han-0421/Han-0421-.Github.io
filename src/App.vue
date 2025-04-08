@@ -23,11 +23,11 @@
     
     <div v-show="!isloading && !isClearScreen" :style="xs||sm?{'overflow-y': 'auto','overflow-x': 'hidden'}:{}">
         <v-row>
-            <v-col cols="12" md="4" lg="3" class="leleo-left" align="center">
-              <div :style="xs||sm?{'font-size':'2.3rem'}:{'display':'none'}" class="leleo-left-welcome">{{ configdata.welcometitle }}</div>  
-              <v-avatar class="leleo-left-avatar" :size="xs||sm?120:140" :style="xs||sm?{'margin-top': '0'}:{'margin-top': '2rem'}" @mouseenter="musicplayershow(1)" @mouseleave="musicplayershow(0)">
-                  <v-img :class="{'leleo-spin':isPlaying}"
-                  alt="Leleo"
+            <v-col cols="12" md="4" lg="3" class="hjx-left" align="center">
+              <div :style="xs||sm?{'font-size':'2.3rem'}:{'display':'none'}" class="hjx-left-welcome">{{ configdata.welcometitle }}</div>  
+              <v-avatar class="hjx-left-avatar" :size="xs||sm?120:140" :style="xs||sm?{'margin-top': '0'}:{'margin-top': '2rem'}" @mouseenter="musicplayershow(1)" @mouseleave="musicplayershow(0)">
+                  <v-img :class="{'hjx-spin':isPlaying}"
+                  alt="hjx"
                   :src=configdata.avatar
                   ></v-img>
                   <!-- 由于当ismusicplayer显示后，fadein无效果，所以需要设置一个过渡动画 -->
@@ -59,7 +59,7 @@
                   </transition>
                 </v-avatar>
 
-                <v-card class="ma-5 pa-2 leleo-left-card" variant="tonal" :max-width="xs?270:300" style="text-align: center;">
+                <v-card class="ma-5 pa-2 hjx-left-card" variant="tonal" :max-width="xs?270:300" style="text-align: center;">
                     <template v-slot:title>
                     <span>Tags</span>
                     </template>
@@ -68,15 +68,15 @@
                     </v-chip>
                 </v-card>
 
-                <div class="leleo-left-chart">
+                <div class="hjx-left-chart">
                     <polarchart :style="xs||sm?{'height':'210px'}:{'height':'270px'}"/>
                 </div>
 
-                <v-container class="leleo-left-socialIconsContainer">
+                <v-container class="hjx-left-socialIconsContainer">
                     <v-row align="center" justify="center">
                     <v-col class="pa-1" cols="auto" v-for="item in socialPlatformIcons">
-                        <v-btn :size="xs?25:33" variant="tonal" color="var(--leleo-vcard-color)"
-                        class="ma-1 leleo-social-bticon"
+                        <v-btn :size="xs?25:33" variant="tonal" color="var(--hjx-vcard-color)"
+                        class="ma-1 hjx-social-bticon"
                         icon
                         :href="item.link" target="_blank"
                         >
@@ -91,15 +91,15 @@
                             transition="slide-y-transition"
                         >
                         <template v-slot:activator="{ props: activatorProps }">
-                            <v-fab style="width: 2.5rem;height: 2.5rem;" color="var(--leleo-vcard-color)"
+                            <v-fab style="width: 2.5rem;height: 2.5rem;" color="var(--hjx-vcard-color)"
                             variant="tonal"
                             v-bind="activatorProps"
                             icon="mdi-cog"
                             ></v-fab>
                         </template>
-                        <v-btn variant="tonal" class="setbtn" key="1" icon="mdi-key-chain" @click="dialog1 = true" size="31" color="var(--leleo-vcard-color)"></v-btn>
-                        <v-btn variant="tonal" class="setbtn" key="2" icon="mdi-information" @click="dialog2 = true" size="31" color="var(--leleo-vcard-color)"></v-btn>
-                        <v-btn variant="tonal" class="setbtn" key="3" icon="$error" size="31" color="var(--leleo-vcard-color)"></v-btn>
+                        <v-btn variant="tonal" class="setbtn" key="1" icon="mdi-key-chain" @click="dialog1 = true" size="31" color="var(--hjx-vcard-color)"></v-btn>
+                        <v-btn variant="tonal" class="setbtn" key="2" icon="mdi-information" @click="dialog2 = true" size="31" color="var(--hjx-vcard-color)"></v-btn>
+                        <v-btn variant="tonal" class="setbtn" key="3" icon="$error" size="31" color="var(--hjx-vcard-color)"></v-btn>
                         </v-speed-dial>
                     </v-col>
                     </v-row>
@@ -124,7 +124,7 @@
           :items="tabs"
           align-tabs="center"
           height="60"
-          slider-color=var(--leleo-vcard-color)
+          slider-color=var(--hjx-vcard-color)
         >
           <template v-slot:tab="{ item }">
             <v-tab
@@ -169,7 +169,7 @@
           style="text-align: center;backdrop-filter: blur(10px);"
         >
           <template v-slot:title >
-            <span class="leleo-card-title">关于</span>
+            <span class="hjx-card-title">关于</span>
           </template>
           <div style="display: flex;flex-direction: column;align-items: center;">
             <v-card class="ma-3 pa-2" hover
@@ -179,7 +179,7 @@
               style="text-align: center;"
               >
               <template v-slot:subtitle>
-                <span class="leleo-card-subtitle">本页基于以下技术及服务搭建</span>
+                <span class="hjx-card-subtitle">本页基于以下技术及服务搭建</span>
               </template>
               <div>
                 <v-tooltip  v-for="item in stackicons" v-model="item.model" location="top">

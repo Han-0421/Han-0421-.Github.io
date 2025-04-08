@@ -1,14 +1,14 @@
 const config = {
   //网页元数据
   metaData:{
-    title: 'Leleo的个人主页🎉',
-    description: '欢迎来到Leleo的奇妙世界！',
-    keywords: 'Leleo,leleo,个人主页,个人网站',
+    title: 'hjx的个人主页🎉',
+    description: '欢迎来到hjx的奇妙世界！',
+    keywords: 'hjx,hjx,个人主页,个人网站',
     icon: '/favicon.ico'   //网页图标，支持外链
   },
 
   avatar: "/img/avatar.jpg", // 头像
-  welcometitle: "Hi, I'm Leleo", // 标题
+  welcometitle: "Hi, I'm hjx", // 标题
 
   // 颜色配置
   color: {
@@ -51,8 +51,8 @@ const config = {
 
   //社交按钮
   socialPlatformIcons: [
-    {icon:"mdi-github",link:"https://www.github.com/leleo886"},
-    {icon:"mdi-email",link:"mailto:leleo886@foxmail.com"},
+    {icon:"mdi-github",link:"https://www.github.com/hjx886"},
+    {icon:"mdi-email",link:"mailto:hjx886@foxmail.com"},
     {icon:"mdi-qqchat",link:"https://im.qq.com/"},
     {icon:"mdi-wechat",link:"https://wx.qq.com/"},
     {icon:"mdi-youtube",link:"https://www.youtube.com"},
@@ -133,17 +133,17 @@ const config = {
 
   //项目卡片 其中 字段"show"控制初始卡片的text是否展开
   projectcards:[ 
-    {go:"🚀 前往",img:"/img/sunshine.jpg",title:"Project 1",subtitle:"1,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🗂️ 前往",img:"/img/sunshine.jpg",title:"Project 2",subtitle:"2,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"📝 前往",img:"/img/sunshine.jpg",title:"Project 3",subtitle:"3,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"👍 前往",img:"/img/sunshine.jpg",title:"Project 4",subtitle:"4,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🗃 前往",img:"/img/sunshine.jpg",title:"Project 5",subtitle:"5,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🎨 前往",img:"/img/sunshine.jpg",title:"Project 6",subtitle:"6,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"💍 前往",img:"/img/sunshine.jpg",title:"Project 7",subtitle:"7,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🔍 前往",img:"/img/sunshine.jpg",title:"Project 8",subtitle:"8,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
+    {go:"🚀 前往",img:"/img/sunshine.jpg",title:"Project 1",subtitle:"1,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
+    {go:"🗂️ 前往",img:"/img/sunshine.jpg",title:"Project 2",subtitle:"2,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
+    {go:"📝 前往",img:"/img/sunshine.jpg",title:"Project 3",subtitle:"3,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
+    {go:"👍 前往",img:"/img/sunshine.jpg",title:"Project 4",subtitle:"4,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
+    {go:"🗃 前往",img:"/img/sunshine.jpg",title:"Project 5",subtitle:"5,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
+    {go:"🎨 前往",img:"/img/sunshine.jpg",title:"Project 6",subtitle:"6,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
+    {go:"💍 前往",img:"/img/sunshine.jpg",title:"Project 7",subtitle:"7,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
+    {go:"🔍 前往",img:"/img/sunshine.jpg",title:"Project 8",subtitle:"8,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://hjx.top",show:false},
   ],
   
-  statement: ["备案号：XXICP备123456789号","Copyright © 2025 Leleo"],
+  statement: ["备案号：XXICP备123456789号","Copyright © 2025 hjx"],
 }
 
 export default config
